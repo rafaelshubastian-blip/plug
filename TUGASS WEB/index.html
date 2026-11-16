@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rvfaell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video class="background-video" autoplay muted loop playsinline>
+        <source src="woi.mp4" type="video/mp4">
+    </video>
+
+    <audio id="musik" loop>
+        <source src="consume.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="gerbang">Clik to Enter...</div>
+
+    <main class="profil">
+        <img class="avatar" src="download.jpg" alt="Avatar">
+        <h1 class="nama">rvfaell</h1>
+        <p class="bio">idk.</p>
+
+    <div class="links">
+        <a class="glass-btn" href="https://www.tiktok.com/@0oaell" target="_blank">TikTok</a>
+        <a class="glass-btn" href="https://www.instagram.com/vaelnnchlnt?psln=cXNsZHpiM3Q4Znh6" target="_blank">Instagram</a>
+        <a class="glass-btn" href="https://discord.com/users/1154065175754842243" target="_blank">Discord</a>
+    </div>
+    </main>
+
+    <script>
+  const gerbang = document.getElementById('gerbang');
+  const musik = document.getElementById('musik');
+  musik.volume = 0.5;
+
+  gerbang.addEventListener('click', () => {
+    musik.play();
+    gerbang.classList.add('hilang');
+  });
+</script>
+</body>
+</html>
